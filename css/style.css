@@ -1,0 +1,15 @@
+    .hamburger-line {
+      transition: all 0.3s ease;
+    }
+
+    .hamburger-active .line-1 {
+      transform: rotate(45deg) translateY(7px);
+    }
+
+    .hamburger-active .line-2 {
+      opacity: 0;
+    }
+
+    .hamburger-active .line-3 {
+      transform: rotate(-45deg) translateY(-7px);
+    }

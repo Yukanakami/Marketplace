@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Products Vintage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="css/style.css"></script>
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+
+
+  <header
+    class="fixed top-0 left-0 w-full z-50 flex justify-between items-center p-4 bg-white bg-opacity-60 backdrop-blur-md border-b border-white/30">
+    <div class="flex items-center gap-2">
+      <img src="all_logo/instagramtrasnparan.png" alt="Vintage Logo" class="w-8 h-8" />
+      <a href="index.html" class="text-xl font-bold text-teal-700">Vintage</a>
+    </div>
+
+
+    <nav class="hidden md:flex items-center gap-4 flex-1 justify-end">
+      <input type="text" placeholder="Search for items"
+        class="border px-4 py-2 rounded-md w-1/2 bg-white bg-opacity-30 backdrop-blur-md border-b border-white/30" />
+      <a href="product.html"
+        class="px-4 py-2 border-gray-300 text-black rounded-md hover:bg-white transition">Products</a>
+      <a href="login.html" class="px-4 py-2 text-black rounded-md hover:bg-white">Login</a>
+      <a href="sign_up.html" class="px-4 py-2 text-black rounded-md hover:bg-white">Sign up</a>
+      <select class="px-2 py-1 border border-gray-300 rounded-md bg-white bg-opacity-30 backdrop-blur-md">
+        <option>En</option>
+        <option>Id</option>
+      </select>
+      <a href="user.html">
+        <img src="all_logo/profile.webp" alt="User Profile" class="w-12 h-12" />
+      </a>
+    </nav>
+
+    <button id="hamburgerBtn" class="md:hidden flex flex-col gap-1 z-50">
+      <span class="hamburger-line line-1 w-6 h-1 bg-teal-700 rounded"></span>
+      <span class="hamburger-line line-2 w-6 h-1 bg-teal-700 rounded"></span>
+      <span class="hamburger-line line-3 w-6 h-1 bg-teal-700 rounded"></span>
+    </button>
+  </header>
+
+
+  <div id="mobileMenu"
+    class="md:hidden fixed top-16 right-4 left-4 hidden flex-col gap-4 bg-white bg-opacity-60 backdrop-blur-md p-4 o shadow-lg z-40">
+    <input type="text" placeholder="Search for items" class="border px-4 py-2 rounded-md w-full" />
+    <a href="product.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-white transition">Products</a>
+    <a href="login.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-white">Login</a>
+    <a href="sign_up.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-white">Sign up</a>
+    <select class="px-2 py-1 border border-gray-300 rounded-md bg-white bg-opacity-30 backdrop-blur-md">
+      <option>En</option>
+      <option>Id</option>
+    </select>
+    <a href="user.html" class="flex justify-center">
+      <img src="all_logo/profile.webp" alt="User Profile" class="w-12 h-12" />
+    </a>
+  </div>
+
+
+
+  <div>
+    <a href="#">
+      <h2 class="text-xl font-bold p-6 hover:text-teal-700 max-w-64">All Products</h2>
+    </a>
+  </div>
+
+  <main class="p-6">
+    <h1 class="text-2xl font-bold mb-6">Items</h1>
+
+    <div class="flex flex-col items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <!-- Produk -->
+      <div class="text-sm">
+        <a href="detail.html">
+          <img src="image/Vintage Jacket.webp" alt=""
+            class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
+          <p class="font-semibold">Rp200.000</p>
+          <p class="text-gray-500 text-sm">Black Tanktop</p>
+          <p class="text-xs text-gray-400">8 / M</p>
+          <p class="text-xs text-gray-400"> </p>
+        </a>
+        <div class="flex items-center justify-between mt-2">
+          <button class="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">Add to Cart</button>
+          <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
+        </div>
+      </div>
+      <div class="text-sm">
+        <a href="detail.html">
+          <img src="image/Vintage Jacket.webp" alt=""
+            class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
+          <p class="font-semibold">Rp200.000</p>
+          <p class="text-gray-500 text-sm">Black Tanktop</p>
+          <p class="text-xs text-gray-400">8 / M</p>
+          <p class="text-xs text-gray-400"> </p>
+        </a>
+        <div class="flex items-center justify-between mt-2">
+          <button class="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">Add to Cart</button>
+          <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
+        </div>
+      </div>
+      <div class="text-sm">
+        <a href="detail.html">
+          <img src="image/Vintage Jacket.webp" alt=""
+            class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
+          <p class="font-semibold">Rp200.000</p>
+          <p class="text-gray-500 text-sm">Black Tanktop</p>
+          <p class="text-xs text-gray-400">8 / M</p>
+          <p class="text-xs text-gray-400"> </p>
+        </a>
+        <div class="flex items-center justify-between mt-2">
+          <button class="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">Add to Cart</button>
+          <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
+        </div>
+      </div>
+      <div class="text-sm">
+        <a href="detail.html">
+          <img src="image/Vintage Jacket.webp" alt=""
+            class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
+          <p class="font-semibold">Rp200.000</p>
+          <p class="text-gray-500 text-sm">Black Tanktop</p>
+          <p class="text-xs text-gray-400">8 / M</p>
+          <p class="text-xs text-gray-400"> </p>
+        </a>
+        <div class="flex items-center justify-between mt-2">
+          <button class="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">Add to Cart</button>
+          <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
+        </div>
+      </div>
+      <div class="text-sm">
+        <a href="detail.html">
+          <img src="image/Vintage Jacket.webp" alt=""
+            class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
+          <p class="font-semibold">Rp200.000</p>
+          <p class="text-gray-500 text-sm">Black Tanktop</p>
+          <p class="text-xs text-gray-400">8 / M</p>
+          <p class="text-xs text-gray-400"> </p>
+        </a>
+        <div class="flex items-center justify-between mt-2">
+          <button class="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">Add to Cart</button>
+          <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
+        </div>
+      </div>
+      <div class="text-sm">
+        <a href="detail.html">
+          <img src="image/Vintage Jacket.webp" alt=""
+            class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
+          <p class="font-semibold">Rp200.000</p>
+          <p class="text-gray-500 text-sm">Black Tanktop</p>
+          <p class="text-xs text-gray-400">8 / M</p>
+          <p class="text-xs text-gray-400"> </p>
+        </a>
+        <div class="flex items-center justify-between mt-2">
+          <button class="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">Add to Cart</button>
+          <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
+        </div>
+      </div>
+      <div class="text-sm">
+        <a href="detail.html">
+          <img src="image/Vintage Jacket.webp" alt=""
+            class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
+          <p class="font-semibold">Rp200.000</p>
+          <p class="text-gray-500 text-sm">Black Tanktop</p>
+          <p class="text-xs text-gray-400">8 / M</p>
+          <p class="text-xs text-gray-400"> </p>
+        </a>
+        <div class="flex items-center justify-between mt-2">
+          <button class="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">Add to Cart</button>
+          <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
+        </div>
+      </div>
+      <div class="text-sm">
+        <a href="detail.html">
+          <img src="image/Vintage Jacket.webp" alt=""
+            class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
+          <p class="font-semibold">Rp200.000</p>
+          <p class="text-gray-500 text-sm">Black Tanktop</p>
+          <p class="text-xs text-gray-400">8 / M</p>
+          <p class="text-xs text-gray-400"> </p>
+        </a>
+        <div class="flex items-center justify-between mt-2">
+          <button class="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">Add to Cart</button>
+          <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
+        </div>
+      </div>
+      <div class="text-sm">
+        <a href="detail.html">
+          <img src="image/Vintage Jacket.webp" alt=""
+            class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
+          <p class="font-semibold">Rp200.000</p>
+          <p class="text-gray-500 text-sm">Black Tanktop</p>
+          <p class="text-xs text-gray-400">8 / M</p>
+          <p class="text-xs text-gray-400"> </p>
+        </a>
+        <div class="flex items-center justify-between mt-2">
+          <button class="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">Add to Cart</button>
+          <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
+        </div>
+      </div>
+
+      <div class="text-sm">
+        <a href="detail.html">
+          <img src="image/Vintage Jacket.webp" alt=""
+            class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
+          <p class="font-semibold">Rp200.000</p>
+          <p class="text-gray-500 text-sm">Black Tanktop</p>
+          <p class="text-xs text-gray-400">8 / M</p>
+          <p class="text-xs text-gray-400"> </p>
+        </a>
+
+        <div class="flex items-center justify-between mt-2">
+          <button class="px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">Add to Cart</button>
+          <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
+        </div>
+
+      </div>
+    </div>
+    <div class=" flex flex-col items-center ">
+      <button class="mt-6 px-4 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition">See More</button>
+    </div>
+  </main>
+
+
+  <footer class="bg-teal-800 text-white p-6 mt-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+      <div>
+        <h3 class="font-bold mb-2">Vintage</h3>
+        <ul class="space-y-2">
+          <li>About us</li>
+          <li>Sustainability</li>
+          <li>Blog</li>
+          <li>Advertising</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Discover</h3>
+        <ul class="space-y-2">
+          <li>How it works</li>
+          <li>Help center</li>
+          <li>Infoboard</li>
+          <li>Mobile apps</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Help</h3>
+        <ul class="space-y-2">
+          <li>Help center</li>
+          <li>Buying</li>
+          <li>Trust & Safety</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Community</h3>
+        <ul>
+          <li>Forum</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex justify-between items-center mt-6 text-sm border-t pt-4 ">
+      <div class="flex gap-3 max-w-96 mt-2 p-1 items-center">
+        <a href="#"><img src="all_logo/watrans.png" alt="WhatsApp" class="w-6 h-6 filter invert" /> </a>
+        <a href="#"><img src="all_logo/iniyangputih.png" alt="Instagram" class="w-6 h-6 " /> </a>
+        <a href="#"><img src="all_logo/putihlahh.png" alt="LinkedIn" class="w-6 h-6 filter invert" /> </a>
+      </div>
+      <p>&copf; Vintage, 2023</p>
+    </div>
+  </footer>
+
+  
+</body>
+<script src="script.js"></script>
+</html>
