@@ -6,360 +6,219 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vintage Shop</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="css/style.css"></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="font-sans bg-white text-gray-800 bg-opacity-80">
   <header
     class="fixed top-0 left-0 w-full z-50 flex justify-between items-center p-4 bg-white bg-opacity-60 backdrop-blur-md border-b border-white/30">
     <div class="flex items-center gap-2">
-      <img src="all_logo/instagramtrasnparan.png" alt="Vintage Logo" class="w-8 h-8" />
+      <img src="all_logo/vintage_logo.png" alt="Vintage Logo" class="w-12 h-12" />
       <a href="index.html" class="text-xl font-bold text-teal-700">Vintage</a>
     </div>
 
-
     <nav class="hidden md:flex items-center gap-4 flex-1 justify-end">
       <input type="text" placeholder="Search for items"
-        class="border px-4 py-2 rounded-md w-1/2 bg-white bg-opacity-30 backdrop-blur-md border-b border-white/30" />
-      <a href="product.html"
-        class="px-4 py-2 border-gray-300 text-black rounded-md hover:bg-white transition">Products</a>
+        class="border px-4 py-2 rounded-md w-1/2 bg-white bg-opacity-30 backdrop-blur-md" />
+      <a href="product.html" class="px-4 py-2 text-black rounded-md hover:bg-white transition">Products</a>
       <a href="login.html" class="px-4 py-2 text-black rounded-md hover:bg-white">Login</a>
       <a href="sign_up.html" class="px-4 py-2 text-black rounded-md hover:bg-white">Sign up</a>
-        <select class="px-2 py-1 border border-gray-300 rounded-md bg-white bg-opacity-30 backdrop-blur-md">
+      <select class="px-2 py-1 border border-gray-300 rounded-md bg-white bg-opacity-30 backdrop-blur-md">
         <option>En</option>
         <option>Id</option>
       </select>
       <a href="user.html">
-        <img src="all_logo/profile.webp" alt="User Profile" class="w-12 h-12" />
+        <img src="all_logo/profile.webp" alt="User Profile" class="w-10 h-10 rounded-full" />
       </a>
     </nav>
 
     <button id="hamburgerBtn" class="md:hidden flex flex-col gap-1 z-50">
-      <span class="hamburger-line line-1 w-6 h-1 bg-teal-700 rounded"></span>
-      <span class="hamburger-line line-2 w-6 h-1 bg-teal-700 rounded"></span>
-      <span class="hamburger-line line-3 w-6 h-1 bg-teal-700 rounded"></span>
+      <span class="w-6 h-1 bg-teal-700 rounded"></span>
+      <span class="w-6 h-1 bg-teal-700 rounded"></span>
+      <span class="w-6 h-1 bg-teal-700 rounded"></span>
     </button>
   </header>
 
- 
   <div id="mobileMenu"
-    class="md:hidden fixed top-16 right-4 left-4 hidden flex-col gap-4 bg-white bg-opacity-60 backdrop-blur-md p-4 o shadow-lg z-40">
+    class="md:hidden fixed top-16 right-4 left-4 hidden flex-col gap-4 bg-white bg-opacity-60 backdrop-blur-md p-4 shadow-lg z-40">
     <input type="text" placeholder="Search for items" class="border px-4 py-2 rounded-md w-full" />
     <a href="product.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-white transition">Products</a>
     <a href="login.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-white">Login</a>
     <a href="sign_up.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-white">Sign up</a>
     <select class="px-2 py-1 border border-gray-300 rounded-md bg-white bg-opacity-30 backdrop-blur-md">
-        <option>En</option>
-        <option>Id</option>
+      <option>En</option>
+      <option>Id</option>
     </select>
     <a href="user.html" class="flex justify-center">
-      <img src="all_logo/profile.webp" alt="User Profile" class="w-12 h-12" />
+      <img src="all_logo/profile.webp" alt="User Profile" class="w-10 h-10 rounded-full" />
     </a>
   </div>
 
   <section class="relative h-screen overflow-hidden">
-    <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
+    <video autoplay muted loop playsinline class="absolute w-full h-full object-cover brightness-50">
       <source src="video/853800-hd_1920_1080_25fps.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
 
-    <div class="absolute top-1/3 left-10 bg-white bg-opacity-80 p-6 rounded-md shadow-md z-10">
-      <h2 class="text-xl font-bold mb-2 max-w-96">wrzsxdefcgvhbjknlm;</h2>
-      <a href="product.html"    
-      <button class="bg-teal-600 text-white px-4 py-2 rounded-md">Shop Now</button>
-      </a>
+    <div class="absolute top-1/2 left-10 transform -translate-y-1/2 bg-white/70 p-6 rounded-lg shadow-md z-10">
+      <h2 class="text-2xl font-bold text-gray-800 mb-4 max-w-lg">Vintage Style is Never Out of Fashion</h2>
+      <a href="product.html"
+        class="inline-block bg-teal-600 text-white px-5 py-2 rounded-md hover:bg-teal-700 transition">Shop Now</a>
     </div>
   </section>
 
-
   <main class="p-6 space-y-10">
+    <!-- Popular Section -->
     <section class="relative">
       <h2 class="text-xl font-bold mb-4">Popular Items</h2>
 
       <button id="scrollLeftBtn"
-        class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border p-2 rounded-full shadow"> &lt;
-      </button>
+        class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border p-2 rounded-full shadow hover:bg-teal-600 hover:text-white transition">&lt;</button>
 
       <div id="popularContainer" class="flex gap-4 overflow-x-auto scroll-pl-6 pl-6 pr-6">
-        <div class="w-40 shrink-0">
+        <!-- Example Product -->
+        <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Nike">
           <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
+            <img src="image/nikarimakak.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
+              alt="Nike Shoes" />
+            <p class="font-semibold text-teal-700">Rp750.000</p>
+            <p class="text-sm text-gray-600">Nike Air Max 97 SE Original Sneakers</p>
+            <p class="text-xs text-gray-400">42 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0">
+        <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Vans">
           <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
+            <img src="image/vanssamping- black.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
+              alt="Nike Shoes" />
+            <p class="font-semibold text-teal-700">Rp750.000</p>
+            <p class="text-sm text-gray-600">old skool unisex sneakers shoes</p>
+            <p class="text-xs text-gray-400">42 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0">
+        <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
           <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
+            <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
+              alt="Nike Shoes" />
+            <p class="font-semibold text-teal-700">Rp750.000</p>
+            <p class="text-sm text-gray-600">Gucci Ace GG Supreme Sneakers</p>
+            <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0">
+         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
           <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
+            <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
+              alt="Nike Shoes" />
+            <p class="font-semibold text-teal-700">Rp750.000</p>
+            <p class="text-sm text-gray-600">Gucci Ace GG Supreme Sneakers</p>
+            <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0">
+         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
           <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
+            <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
+              alt="Nike Shoes" />
+            <p class="font-semibold text-teal-700">Rp750.000</p>
+            <p class="text-sm text-gray-600">Gucci Ace GG Supreme Sneakers</p>
+            <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0">
+         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
           <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
+            <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
+              alt="Nike Shoes" />
+            <p class="font-semibold text-teal-700">Rp750.000</p>
+            <p class="text-sm text-gray-600">Gucci Ace GG Supreme Sneakers</p>
+            <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0">
+         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
           <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
+            <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
+              alt="Nike Shoes" />
+            <p class="font-semibold text-teal-700">Rp750.000</p>
+            <p class="text-sm text-gray-600">Gucci Ace GG Supreme Sneakers</p>
+            <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0">
+         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
           <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
+            <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
+              alt="Nike Shoes" />
+            <p class="font-semibold text-teal-700">Rp750.000</p>
+            <p class="text-sm text-gray-600">Gucci Ace GG Supreme Sneakers</p>
+            <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0">
+         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
           <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
+            <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
+              alt="Nike Shoes" />
+            <p class="font-semibold text-teal-700">Rp750.000</p>
+            <p class="text-sm text-gray-600">Gucci Ace GG Supreme Sneakers</p>
+            <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0">
+         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
           <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
+            <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
+              alt="Nike Shoes" />
+            <p class="font-semibold text-teal-700">Rp750.000</p>
+            <p class="text-sm text-gray-600">Gucci Ace GG Supreme Sneakers</p>
+            <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-20 shrink-0 flex">
-          <a href="product.html" class="px-4 py-2 bg-teal-600 bg-opacity-50 text-white hover:bg-teal-500 transition">See All
-            Product</a>
+
+      
+       
+
+        <div class="w-20 shrink-0 flex items-center">
+          <a href="product.html" class="px-4 py-2 bg-teal-600 bg-opacity-50 text-white hover:bg-teal-500 transition rounded-md">See All Popular Product</a>
         </div>
       </div>
-
 
       <button id="scrollRightBtn"
-        class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border p-2 rounded-full shadow"> &gt;
-      </button>
-    </section>
+        class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border p-2 rounded-full shadow hover:bg-teal-600 hover:text-white transition">&gt;</button>
 
-    <section>
-      <h2 class="text-xl font-bold mb-4">Shop by Brand</h2>
-      <div class="flex flex-wrap gap-2">
-        <span class="border px-3 py-1 rounded-full text-sm">Vans</span>
-        <span class="border px-3 py-1 rounded-full text-sm">Nike</span>
-        <span class="border px-3 py-1 rounded-full text-sm">Gucci</span>
+      
+      <h2 class="text-xl font-bold mt-8 mb-2">Shop by Brand</h2>
+      <div class="flex flex-wrap gap-2 mt-2">
+        <button onclick="filterBrand('Vans')" class="filter-btn hover:bg-teal-500 rounded px-4 py-2">Vans</button>
+        <button onclick="filterBrand('Nike')" class="filter-btn hover:bg-teal-500 rounded px-4 py-2">Nike</button>
+        <button onclick="filterBrand('Gucci')" class="filter-btn hover:bg-teal-500 rounded px-4 py-2">Gucci</button>
+        <button onclick="filterBrand('all')" class="px-4 py-2 rounded bg-teal-600 text-white ">Show All</button>
       </div>
     </section>
 
+    
     <section class="relative">
       <h2 class="text-xl font-bold mb-4">New Items</h2>
 
       <button id="scrollkiributon"
-        class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border p-2 rounded-full shadow"> &lt;
-      </button>
+        class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border p-2 rounded-full shadow hover:bg-teal-600 hover:text-white transition">&lt;</button>
 
       <div id="newContainer" class="flex gap-4 overflow-x-auto scroll-pl-6 pl-6 pr-6">
-        <div class="w-40 shrink-0">
+        <div class="w-40 shrink-0 bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300">
           <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
+            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg"
+              class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
+            <p class="font-semibold text-teal-700">Rp200.000</p>
+            <p class="text-sm text-gray-600">Red Crewneck</p>
+            <p class="text-xs text-gray-400">8 / M · ❤️ 12</p>
           </a>
         </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-40 shrink-0">
-          <a href="detail.html">
-            <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg" class="rounded-md mb-2" />
-            <p class="font-semibold">Rp200.000</p>
-            <p class="text-sm text-gray-500">Red Crewneck</p>
-            <p class="text-xs text-gray-400">8 / M</p>
-            <p class="text-xs text-gray-400">❤️ 12</p>
-          </a>
-        </div>
-        <div class="w-20 shrink-0 flex">
-          <a href="product.html" class="px-4 py-2 bg-teal-600 bg-opacity-50 text-white hover:bg-teal-500 transition">See All New
-            Product</a>
+
+        <div class="w-20 shrink-0 flex items-center">
+          <a href="product.html" class="px-4 py-2 bg-teal-600 bg-opacity-50 text-white hover:bg-teal-500 transition rounded-md">See All New Product</a>
         </div>
       </div>
 
-
       <button id="scrollkananbuton"
-        class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border p-2 rounded-full shadow"> &gt;
-      </button>
+        class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border p-2 rounded-full shadow hover:bg-teal-600 hover:text-white transition">&gt;</button>
     </section>
-
   </main>
 
-  <footer class="bg-teal-800 text-white p-6 mt-12">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+  <footer class="bg-teal-900 text-white p-6 mt-12">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-sm">
       <div>
         <h3 class="font-bold mb-2">Vintage</h3>
         <ul class="space-y-2">
@@ -393,18 +252,17 @@
         </ul>
       </div>
     </div>
-
-    <div class="flex justify-between items-center mt-6 text-sm border-t pt-4 ">
-      <div class="flex gap-3 max-w-96 mt-2 p-1 items-center">
-        <a href="#"><img src="all_logo/watrans.png" alt="WhatsApp" class="w-6 h-6 filter invert" /> </a>
-        <a href="#"><img src="all_logo/iniyangputih.png" alt="Instagram" class="w-6 h-6 " /> </a>
-        <a href="#"><img src="all_logo/putihlahh.png" alt="LinkedIn" class="w-6 h-6 filter invert" /> </a>
+    <div class="flex justify-between items-center mt-6 text-xs border-t pt-4 border-white/20">
+      <div class="flex gap-3">
+        <a href="#"><img src="all_logo/watrans.png" class="w-5 h-5 filter invert" /></a>
+        <a href="#"><img src="all_logo/iniyangputih.png" class="w-5 h-5" /></a>
+        <a href="#"><img src="all_logo/putihlahh.png" class="w-5 h-5 filter invert" /></a>
       </div>
-      <p>&copy; Vintage, 2023</p>
+      <p class="text-white/70">&copy; Vintage, 2023</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>

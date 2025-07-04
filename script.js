@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
-const hamburger = document.getElementById('hamburgerBtn');
-const mobileMenu = document.getElementById('mobileMenu');
 
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('hamburger-active');
-  mobileMenu.classList.toggle('hidden');
+document.getElementById("hamburgerBtn").addEventListener("click", function () {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("hidden");
+  menu.classList.toggle("flex");
 });
+
 
 function togglePassword() {
   const passwordInput = document.getElementById("password");
@@ -37,7 +37,7 @@ function togglePassword() {
 
   if (passwordInput.type === "password") {
     passwordInput.type = "text";
-    eyeIcon.src = "all_logo/eyesclose.png"; 
+    eyeIcon.src = "all_logo/eyesclose.png";
   } else {
     passwordInput.type = "password";
     eyeIcon.src = "all_logo/eyesopen.png";
@@ -57,5 +57,16 @@ function togglePassword(inputId, iconId) {
   }
 }
 
+function filterBrand(brand) {
+  const items = document.querySelectorAll('.product-item');
 
+  items.forEach(item => {
+    const itemBrand = item.getAttribute('data-brand');
+    if (brand === 'all' || itemBrand === brand) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
+}
 
