@@ -7,28 +7,45 @@
   <title>Vintage Shop</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
 </head>
 
-<body class="font-sans bg-white text-gray-800 bg-opacity-80">
+<body class="bg-[#fdfdfc] text-gray-800">
   <header
-    class="fixed top-0 left-0 w-full z-50 flex justify-between items-center p-4 bg-white bg-opacity-60 backdrop-blur-md border-b border-white/30">
-    <div class="flex items-center gap-2">
+    class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-white/80 backdrop-blur-md border-b border-white/30 shadow-md">
+    <div class="flex items-center gap-3">
       <img src="all_logo/vintage_logo.png" alt="Vintage Logo" class="w-12 h-12" />
-      <a href="index.html" class="text-xl font-bold text-teal-700">Vintage</a>
+      <a href="index.html" class="text-2xl font-bold text-teal-700 tracking-wide">Vintage</a>
     </div>
 
-    <nav class="hidden md:flex items-center gap-4 flex-1 justify-end">
+    <nav class="hidden md:flex items-center gap-5 flex-1 justify-end">
       <input type="text" placeholder="Search for items"
-        class="border px-4 py-2 rounded-md w-1/2 bg-white bg-opacity-30 backdrop-blur-md" />
-      <a href="product.html" class="px-4 py-2 text-black rounded-md hover:bg-white transition">Products</a>
-      <a href="login.html" class="px-4 py-2 text-black rounded-md hover:bg-white">Login</a>
-      <a href="sign_up.html" class="px-4 py-2 text-black rounded-md hover:bg-white">Sign up</a>
-      <select class="px-2 py-1 border border-gray-300 rounded-md bg-white bg-opacity-30 backdrop-blur-md">
+        class="border px-4 py-2 rounded-md w-1/2 bg-white/70 backdrop-blur-md focus:outline-none" />
+      <a href="product.html" class="px-4 py-2 text-black rounded-md hover:bg-teal-100 transition">Products</a>
+      <a href="login.html" class="px-4 py-2 text-black rounded-md hover:bg-teal-100">Login</a>
+      <a href="sign_up.html" class="px-4 py-2 text-black rounded-md hover:bg-teal-100">Sign up</a>
+      <select class="px-2 py-1 border border-gray-300 rounded-md bg-white/70 backdrop-blur-md">
         <option>En</option>
         <option>Id</option>
       </select>
       <a href="user.html">
-        <img src="all_logo/profile.webp" alt="User Profile" class="w-10 h-10 rounded-full" />
+        <img src="all_logo/profile.webp" alt="User Profile" class="w-10 h-10 rounded-full border border-teal-600" />
       </a>
     </nav>
 
@@ -40,17 +57,17 @@
   </header>
 
   <div id="mobileMenu"
-    class="md:hidden fixed top-16 right-4 left-4 hidden flex-col gap-4 bg-white bg-opacity-60 backdrop-blur-md p-4 shadow-lg z-40">
+    class="md:hidden fixed top-16 right-4 left-4 hidden flex-col gap-4 bg-white/80 backdrop-blur-md p-4 shadow-lg z-40 rounded-lg">
     <input type="text" placeholder="Search for items" class="border px-4 py-2 rounded-md w-full" />
-    <a href="product.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-white transition">Products</a>
-    <a href="login.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-white">Login</a>
-    <a href="sign_up.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-white">Sign up</a>
-    <select class="px-2 py-1 border border-gray-300 rounded-md bg-white bg-opacity-30 backdrop-blur-md">
+    <a href="product.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-teal-100 transition">Products</a>
+    <a href="login.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-teal-100">Login</a>
+    <a href="sign_up.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-teal-100">Sign up</a>
+    <select class="px-2 py-1 border border-gray-300 rounded-md bg-white/70 text-black">
       <option>En</option>
       <option>Id</option>
     </select>
     <a href="user.html" class="flex justify-center">
-      <img src="all_logo/profile.webp" alt="User Profile" class="w-10 h-10 rounded-full" />
+      <img src="all_logo/profile.webp" alt="User Profile" class="w-10 h-10 rounded-full border border-teal-600" />
     </a>
   </div>
 
@@ -60,10 +77,12 @@
       Your browser does not support the video tag.
     </video>
 
-    <div class="absolute top-1/2 left-10 transform -translate-y-1/2 bg-white/70 p-6 rounded-lg shadow-md z-10">
-      <h2 class="text-2xl font-bold text-gray-800 mb-4 max-w-lg">Vintage Style is Never Out of Fashion</h2>
+    <div
+      class="absolute top-1/2 left-10 transform -translate-y-1/2 bg-white/90 p-8 rounded-2xl shadow-lg z-10 max-w-md border border-gray-200">
+      <h2 class="text-3xl font-bold text-teal-800 mb-4 leading-snug">Vintage Style is Never Out of Fashion</h2>
       <a href="product.html"
-        class="inline-block bg-teal-600 text-white px-5 py-2 rounded-md hover:bg-teal-700 transition">Shop Now</a>
+        class="inline-block bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition font-semibold">Shop
+        Now</a>
     </div>
   </section>
 
@@ -77,7 +96,9 @@
 
       <div id="popularContainer" class="flex gap-4 overflow-x-auto scroll-pl-6 pl-6 pr-6">
         <!-- Example Product -->
-        <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Nike">
+        <div
+          class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300"
+          data-brand="Nike">
           <a href="detail.html">
             <img src="image/nikarimakak.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
               alt="Nike Shoes" />
@@ -86,16 +107,20 @@
             <p class="text-xs text-gray-400">42 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Vans">
+        <div
+          class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300"
+          data-brand="Vans">
           <a href="detail.html">
-            <img src="image/vanssamping- black.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
-              alt="Nike Shoes" />
+            <img src="image/vanssamping- black.webp"
+              class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" alt="Nike Shoes" />
             <p class="font-semibold text-teal-700">Rp750.000</p>
             <p class="text-sm text-gray-600">old skool unisex sneakers shoes</p>
             <p class="text-xs text-gray-400">42 / L · ❤️ 25</p>
           </a>
         </div>
-        <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
+        <div
+          class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300"
+          data-brand="Gucci">
           <a href="detail.html">
             <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
               alt="Nike Shoes" />
@@ -104,7 +129,9 @@
             <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
+        <div
+          class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300"
+          data-brand="Gucci">
           <a href="detail.html">
             <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
               alt="Nike Shoes" />
@@ -113,7 +140,9 @@
             <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
+        <div
+          class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300"
+          data-brand="Gucci">
           <a href="detail.html">
             <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
               alt="Nike Shoes" />
@@ -122,7 +151,9 @@
             <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
+        <div
+          class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300"
+          data-brand="Gucci">
           <a href="detail.html">
             <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
               alt="Nike Shoes" />
@@ -131,7 +162,9 @@
             <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
+        <div
+          class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300"
+          data-brand="Gucci">
           <a href="detail.html">
             <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
               alt="Nike Shoes" />
@@ -140,7 +173,9 @@
             <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
+        <div
+          class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300"
+          data-brand="Gucci">
           <a href="detail.html">
             <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
               alt="Nike Shoes" />
@@ -149,7 +184,9 @@
             <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
+        <div
+          class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300"
+          data-brand="Gucci">
           <a href="detail.html">
             <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
               alt="Nike Shoes" />
@@ -158,7 +195,9 @@
             <p class="text-xs text-gray-400">41 / L · ❤️ 25</p>
           </a>
         </div>
-         <div class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300" data-brand="Gucci">
+        <div
+          class="w-40 shrink-0 product-item bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300"
+          data-brand="Gucci">
           <a href="detail.html">
             <img src="image/Guccigang.webp" class="rounded-md mb-2 hover:scale-105 transition-transform duration-200"
               alt="Nike Shoes" />
@@ -168,16 +207,18 @@
           </a>
         </div>
 
-    
+
         <div class="w-20 shrink-0 flex items-center">
-          <a href="product.html" class="px-4 py-2 bg-teal-600 bg-opacity-50 text-white hover:bg-teal-500 transition rounded-md">See All Popular Product</a>
+          <a href="product.html"
+            class="px-4 py-2 bg-teal-600 bg-opacity-50 text-white hover:bg-teal-500 transition rounded-md">See All
+            Popular Product</a>
         </div>
       </div>
 
       <button id="scrollRightBtn"
         class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border p-2 rounded-full shadow hover:bg-teal-600 hover:text-white transition">&gt;</button>
 
-      
+
       <h2 class="text-xl font-bold mt-8 mb-2">Shop by Brand</h2>
       <div class="flex flex-wrap gap-2 mt-2">
         <button onclick="filterBrand('Vans')" class="filter-btn hover:bg-teal-500 rounded px-4 py-2">Vans</button>
@@ -187,7 +228,7 @@
       </div>
     </section>
 
-    
+
     <section class="relative">
       <h2 class="text-xl font-bold mb-4">New Items</h2>
 
@@ -195,7 +236,8 @@
         class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white border p-2 rounded-full shadow hover:bg-teal-600 hover:text-white transition">&lt;</button>
 
       <div id="newContainer" class="flex gap-4 overflow-x-auto scroll-pl-6 pl-6 pr-6">
-        <div class="w-40 shrink-0 bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300">
+        <div
+          class="w-40 shrink-0 bg-white bg-opacity-80 backdrop-blur-md p-3 rounded-lg shadow hover:shadow-lg transition-all duration-300">
           <a href="detail.html">
             <img src="image/bdc357d292ccea31f7be72b1ff5fd94f.jpeg"
               class="rounded-md mb-2 hover:scale-105 transition-transform duration-200" />
@@ -206,7 +248,9 @@
         </div>
 
         <div class="w-20 shrink-0 flex items-center">
-          <a href="product.html" class="px-4 py-2 bg-teal-600 bg-opacity-50 text-white hover:bg-teal-500 transition rounded-md">See All New Product</a>
+          <a href="product.html"
+            class="px-4 py-2 bg-teal-600 bg-opacity-50 text-white hover:bg-teal-500 transition rounded-md">See All New
+            Product</a>
         </div>
       </div>
 
@@ -260,7 +304,7 @@
     </div>
   </footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
