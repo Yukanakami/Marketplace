@@ -10,25 +10,25 @@
 
 <body class="bg-gray-100 text-gray-800 font-sans">
 
-  <!-- Header -->
-  <header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center p-4 bg-white bg-opacity-70 backdrop-blur-md border-b border-white/30">
-    <div class="flex items-center gap-2">
+  <header
+    class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-4 bg-white/80 backdrop-blur-md border-b border-white/30 shadow-md">
+    <div class="flex items-center gap-3">
       <img src="all_logo/vintage_logo.png" alt="Vintage Logo" class="w-12 h-12" />
-      <a href="index.html" class="text-2xl font-bold text-teal-700">Vintage</a>
+      <a href="index.html" class="text-2xl font-bold text-teal-700 tracking-wide">Vintage</a>
     </div>
 
-    <nav class="hidden md:flex items-center gap-4">
+    <nav class="hidden md:flex items-center gap-5 flex-1 justify-end">
       <input type="text" placeholder="Search for items"
-        class="border px-4 py-2 rounded-md w-64 bg-white bg-opacity-30 backdrop-blur-md border-gray-300" />
-      <a href="product.html" class="px-4 py-2 text-sm font-medium hover:text-teal-600 transition">Products</a>
-      <a href="login.html" class="px-4 py-2 text-sm font-medium hover:text-teal-600 transition">Login</a>
-      <a href="sign_up.html" class="px-4 py-2 text-sm font-medium hover:text-teal-600 transition">Sign up</a>
-      <select class="px-2 py-1 border border-gray-300 rounded-md bg-white">
+        class="border px-4 py-2 rounded-md w-1/2 bg-white/70 backdrop-blur-md focus:outline-none" />
+      <a href="product.html" class="px-4 py-2 text-black rounded-md hover:bg-teal-100 transition">Products</a>
+      <a href="login.html" class="px-4 py-2 text-black rounded-md hover:bg-teal-100">Login</a>
+      <a href="sign_up.html" class="px-4 py-2 text-black rounded-md hover:bg-teal-100">Sign up</a>
+      <select class="px-2 py-1 border border-gray-300 rounded-md bg-white/70 backdrop-blur-md">
         <option>En</option>
         <option>Id</option>
       </select>
       <a href="user.html">
-        <img src="all_logo/profile.webp" alt="User Profile" class="w-10 h-10 rounded-full" />
+        <img src="all_logo/profile.webp" alt="User Profile" class="w-10 h-10 rounded-full border border-teal-600" />
       </a>
     </nav>
 
@@ -39,40 +39,42 @@
     </button>
   </header>
 
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="md:hidden fixed top-16 left-4 right-4 hidden flex-col gap-4 bg-white bg-opacity-70 backdrop-blur-md p-4 rounded-lg shadow-lg z-40">
+  <div id="mobileMenu"
+    class="md:hidden fixed top-16 right-4 left-4 hidden flex-col gap-4 bg-white/80 backdrop-blur-md p-4 shadow-lg z-40 rounded-lg">
     <input type="text" placeholder="Search for items" class="border px-4 py-2 rounded-md w-full" />
-    <a href="product.html" class="block text-center py-2 hover:text-teal-600">Products</a>
-    <a href="login.html" class="block text-center py-2 hover:text-teal-600">Login</a>
-    <a href="sign_up.html" class="block text-center py-2 hover:text-teal-600">Sign up</a>
-    <select class="w-full px-2 py-1 border border-gray-300 rounded-md bg-white">
+    <a href="product.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-teal-100 transition">Products</a>
+    <a href="login.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-teal-100">Login</a>
+    <a href="sign_up.html" class="px-4 py-2 text-center text-black rounded-md hover:bg-teal-100">Sign up</a>
+    <select class="px-2 py-1 border border-gray-300 rounded-md bg-white/70 text-black">
       <option>En</option>
       <option>Id</option>
     </select>
     <a href="user.html" class="flex justify-center">
-      <img src="all_logo/profile.webp" alt="User Profile" class="w-10 h-10 rounded-full" />
+      <img src="all_logo/profile.webp" alt="User Profile" class="w-10 h-10 rounded-full border border-teal-600" />
     </a>
   </div>
 
-  <!-- Main Content -->
   <main class="pt-28 px-6 pb-16">
     <h1 class="text-3xl font-bold mb-8 text-center text-teal-700">All Vintage Products</h1>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-      <!-- Example Product Card -->
+  
       <div class="bg-white p-4 rounded-md shadow hover:shadow-lg transition">
         <a href="detail.html">
-          <img src="image/Vintage Jacket.webp" alt="Vintage Jacket" class="rounded-md mb-2 hover:scale-105 transition-transform duration-300" />
+          <img src="image/Vintage Jacket.webp" alt="Vintage Jacket"
+            class="rounded-md mb-2 hover:scale-105 transition-transform duration-300" />
           <p class="font-semibold">Rp200.000</p>
           <p class="text-gray-500 text-sm">Vintage Jacket</p>
           <p class="text-xs text-gray-400">8 / M</p>
         </a>
         <div class="flex items-center justify-between mt-3">
-          <button class="px-4 py-1.5 bg-teal-600 text-white text-sm rounded-md hover:bg-teal-700 transition">Add to Cart</button>
-          <button class="px-4 py-1.5 bg-gray-200 text-sm text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
+          <button class="px-4 py-1.5 bg-teal-600 text-white text-sm rounded-md hover:bg-teal-700 transition">Add to
+            Cart</button>
+          <button
+            class="px-4 py-1.5 bg-gray-200 text-sm text-gray-800 rounded-md hover:bg-gray-300 transition">Wishlist</button>
         </div>
       </div>
-      
+
     </div>
 
     <div class="flex justify-center mt-10">
@@ -80,7 +82,7 @@
     </div>
   </main>
 
-  <!-- Footer -->
+    
   <footer class="bg-teal-800 text-white p-6">
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
       <div>
