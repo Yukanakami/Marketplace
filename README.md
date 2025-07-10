@@ -34,15 +34,13 @@
 
 - **Frontend:** HTML, Tailwind CSS, JavaScript  
 - **Design:** Responsive layout, mobile-first  
-- **Libraries:** Font Awesome, Heroicons (optional)
+- **Libraries:** Font Awesome   
 
 ---
 
 ## 📸 Demo
 
-> 🔗 [Live Demo Link (if available)](https://example.com)
-
-You can include screenshots or short video previews here:
+> 
 
 
 ---
@@ -81,3 +79,8 @@ You may not reproduce, distribute, or use any part of this website for commercia
 For licensing inquiries, please contact:
 📧 nyomanmaheka69@gmail.com
 
+## 👤 Author
+
+**Nyoman Maheka Wijananta Putra**  
+💼 Passionate Frontend Developer | UI Enthusiast  
+🔗 [LinkedIn](www.linkedin.com/in/nyomanmaheka) • [GitHub](https://github.com/Yukanakami)
