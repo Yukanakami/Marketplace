@@ -1,5 +1,7 @@
 # 🛍️ Marketplace
 
+![Marketplace Banner](image/banner.png)
+
 [![Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/)  
 [![License: MIT](https://img.shields.io/badge/license-Custom-blue)](#license)
 
@@ -79,7 +81,7 @@ You may not reproduce, distribute, or use any part of this website for commercia
 For licensing inquiries, please contact:
 📧 nyomanmaheka69@gmail.com
 
-## 👤 Author
+👤 Author
 
 **Nyoman Maheka Wijananta Putra**  
 💼 Passionate Frontend Developer | UI Enthusiast  
