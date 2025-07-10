@@ -1,44 +1,83 @@
-# 🛍 Marketplace
+# 🛍️ Marketplace
 
-[![Build Status](...)](…)
-[![License: MIT](...)](…)
+[![Build](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/)  
+[![License: MIT](https://img.shields.io/badge/license-Custom-blue)](#license)
 
-A full‑stack web app for online buying and selling.
+> A modern full‑stack web application for seamless online buying and selling experience.
 
-## 📑 Table of Contents
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Architecture](#architecture)
-- [Contributing](#contributing)
-- [License](#license)
-- [Author](#author)
+---
+
+## 📚 Table of Contents
+
+- [✨ Features](#-features)  
+- [🛠 Tech Stack](#-tech-stack)  
+- [📸 Demo](#-demo)  
+- [⚙️ Installation](#-installation)  
+- [🏗️ Architecture](#-architecture)  
+- [🤝 Contributing](#-contributing)  
+- [📄 License](#-license)  
+- [👤 Author](#-author)
+
+---
 
 ## ✨ Features
-nothing
+
+- Responsive and modern UI with Tailwind CSS  
+- User-friendly design for product listing & cart  
+- Smooth navigation and layout  
+- Add to Wishlist / Cart functionality with notification  
+- (More features coming soon...)
+
+---
 
 ## 🛠 Tech Stack
-...
+
+- **Frontend:** HTML, Tailwind CSS, JavaScript  
+- **Design:** Responsive layout, mobile-first  
+- **Libraries:** Font Awesome, Heroicons (optional)
+
+---
 
 ## 📸 Demo
-...
+
+> 🔗 [Live Demo Link (if available)](https://example.com)
+
+You can include screenshots or short video previews here:
+
+
+---
 
 ## ⚙️ Installation
-...
 
-## 🧪 Usage
-...
+```bash
+# 1. Clone the repository
+git clone https://github.com/username/marketplace.git
 
-## 🏗 Architecture
-Explain folders and their purpose.
+# 2. Navigate into the directory
+cd marketplace
 
-## 🤝 Contributing
-...
+# 3. Open with live server or preferred development environment
 
-## 📄 License
-...
+📁 /assets         -> All static assets (images, icons)
+📁 /components     -> Reusable components (cards, buttons)
+📁 /pages          -> Main pages (index.html, product.html, etc.)
+📁 /styles         -> Tailwind config and custom styles
+📄  tailwind.config.js -> Tailwind configuration
 
-## 👤 Author
-...
+🤝 Contributing
+Contributions, issues, and suggestions are welcome!
+Feel free to fork this repo and submit a pull request.
+
+
+📄 License
+Copyright © 2025 Maheka
+
+All rights reserved.
+
+This website and its contents — including but not limited to code, design, layout, and visuals — are the property of Maheka, unless otherwise noted.
+
+You may not reproduce, distribute, or use any part of this website for commercial purposes without express permission.
+
+For licensing inquiries, please contact:
+📧 nyomanmaheka69@gmail.com
+
