@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // === SCROLLING BUTTONS ===
+  
   const popularContainer = document.getElementById("popularContainer");
   if (popularContainer) {
     document.getElementById("scrollLeftBtn")?.addEventListener("click", () => {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // === MOBILE MENU ===
+  
   const hamburgerBtn = document.getElementById("hamburgerBtn");
   const mobileMenu = document.getElementById("mobileMenu");
   if (hamburgerBtn && mobileMenu) {
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // === TOGGLE PASSWORD ===
+ 
   window.togglePassword = function (inputId, iconId) {
     const passwordInput = document.getElementById(inputId);
     const eyeIcon = document.getElementById(iconId);
@@ -48,17 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  // === FILTER BRAND ===
-  window.filterBrand = function (brand) {
-    const items = document.querySelectorAll('.product-item');
-
-    items.forEach(item => {
-      const itemBrand = item.getAttribute('data-brand');
-      item.style.display = (brand === 'all' || itemBrand === brand) ? 'block' : 'none';
-    });
-  };
-
-  // === ADD TO CART NOTIFICATION ===
   const addToCartBtn = document.querySelector('#addToCartBtn');
   const notification = document.querySelector('#cartNotification');
 
@@ -74,3 +63,17 @@ document.addEventListener('DOMContentLoaded', () => {
     console.warn('❗️ Element tombol atau notifikasi tidak ditemukan di halaman ini');
   }
 });
+
+window.filterBrand = function (brand) {
+  const items = document.querySelectorAll('.product-item');
+
+  items.forEach(item => {
+    const itemBrand = item.getAttribute('data-brand');
+    if (brand === 'all' || itemBrand === brand) {
+      item.classList.remove('hidden');
+    } else {
+      item.classList.add('hidden');
+    }
+  });
+};
+
